@@ -11,8 +11,7 @@ import org.junit.jupiter.api.BeforeEach;
 
 import static com.codeborne.selenide.Selenide.*;
 
-public class TestBase  {
-
+public class TestBase {
     @BeforeAll
     static void beforeAll() {
         Configuration.browser = BrowserstackDriver.class.getName();
@@ -28,7 +27,6 @@ public class TestBase  {
     @AfterEach
     void addAttachments() {
         String sessionId = sessionId().toString();
-
         Attach.pageSource();
         closeWebDriver();
         Attach.addVideo(sessionId);
