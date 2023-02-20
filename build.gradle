@@ -74,3 +74,15 @@ test {
     useJUnitPlatform()
     systemProperties(System.getProperties())
 }
+
+task android(type: Test) {
+    useJUnitPlatform {
+        includeTags("android")
+    }
+}
+
+task ios(type: Test) {
+    useJUnitPlatform {
+        includeTags("ios")
+    }
+}
