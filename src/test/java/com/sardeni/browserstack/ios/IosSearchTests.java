@@ -1,6 +1,7 @@
 package com.sardeni.browserstack.ios;
 
 import com.sardeni.browserstack.TestBase;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
@@ -12,6 +13,7 @@ import static org.openqa.selenium.By.id;
 public class IosSearchTests extends TestBase {
     @Test
     @Tag("ios")
+    @DisplayName("Проверка отображения email")
     void loginTestFlight (){
         step("Click button", () ->{
             $(id("Text Button")).click();

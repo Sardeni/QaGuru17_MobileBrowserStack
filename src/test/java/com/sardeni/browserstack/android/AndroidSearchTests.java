@@ -13,7 +13,7 @@ import static io.qameta.allure.Allure.step;
 import static org.openqa.selenium.By.id;
 public class AndroidSearchTests extends TestBase {
 
-  //  @Test
+    @Test
     @Tag("android")
   @DisplayName("Проверка поля поиска")
   void searchTest() {
@@ -27,7 +27,7 @@ public class AndroidSearchTests extends TestBase {
     }
 
     @DisplayName("Проверка текста на кнопке в форме входа")
-  //  @Test
+    @Test
     @Tag("android")
     void CheckButtonLogIn() {
 
