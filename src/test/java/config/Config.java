@@ -1,10 +1,10 @@
-package drivers;
+package config;
 
 @Config.LoadPolicy(Config.LoadType.MERGE)
-@Config.Sources({
-        "classpath:${env}.properties",
-        "classpath:secret.properties"
-})
+@org.aeonbits.owner.Config.Sources(
+        {"system:properties",
+                "classpath:${env}.properties",
+                "classpath:secret.properties"})
 
 public interface Config extends org.aeonbits.owner.Config {
     @Key("login")
