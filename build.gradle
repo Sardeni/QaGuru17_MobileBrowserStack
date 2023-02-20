@@ -75,14 +75,14 @@ test {
     systemProperties(System.getProperties())
 }
 
-task android(type: Test) {
+task ios(type: Test) {
     useJUnitPlatform {
-        includeTags("android")
+        includeTags 'ios'
     }
 }
 
-task ios(type: Test) {
+task android(type: Test) {
     useJUnitPlatform {
-        includeTags("ios")
+        includeTags 'android'
     }
 }
