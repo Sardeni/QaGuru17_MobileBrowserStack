@@ -1,10 +1,10 @@
 package com.sardeni.browserstack.tests;
 
 
+import com.sardeni.browserstack.drivers.BrowserstackDrivers;
 import com.sardeni.browserstack.helpers.Attach;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
-import com.sardeni.browserstack.drivers.BrowserstackDrivers;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -28,6 +28,7 @@ public class TestBase {
     @AfterEach
     void addAttachments() {
         String sessionId = sessionId().toString();
+//        Attach.screenshotAs("Last screenshot");
         Attach.pageSource();
         closeWebDriver();
         Attach.addVideo(sessionId);
