@@ -1,6 +1,6 @@
-package com.sardeni.browserstack.android;
+package com.sardeni.browserstack.tests.android;
 
-import com.sardeni.browserstack.TestBase;
+import com.sardeni.browserstack.tests.TestBase;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;

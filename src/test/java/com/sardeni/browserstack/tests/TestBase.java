@@ -1,9 +1,10 @@
-package com.sardeni.browserstack;
+package com.sardeni.browserstack.tests;
 
+
+import com.sardeni.browserstack.helpers.Attach;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
-import drivers.BrowserstackDriver;
-import helpers.Attach;
+import com.sardeni.browserstack.drivers.BrowserstackDrivers;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -14,7 +15,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class TestBase {
     @BeforeAll
     static void beforeAll() {
-        Configuration.browser = BrowserstackDriver.class.getName();
+        Configuration.browser = BrowserstackDrivers.class.getName();
         Configuration.browserSize = null;
     }
 
