@@ -1,9 +1,11 @@
 package com.sardeni.browserstack.helpers;
+
 import io.qameta.allure.Attachment;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
 import java.nio.charset.StandardCharsets;
+
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 import static com.sardeni.browserstack.helpers.Browserstack.getVideoUrl;
 

@@ -3,8 +3,10 @@ package com.sardeni.browserstack.helpers;
 import static com.sardeni.browserstack.helpers.CustomApiListener.withCustomTemplates;
 import static io.restassured.RestAssured.given;
 import static java.lang.String.format;
+
 import com.sardeni.browserstack.config.BrowserStackConfig;
 import org.aeonbits.owner.ConfigFactory;
+
 public class Browserstack {
 
     public static String getVideoUrl(String sessionId) {

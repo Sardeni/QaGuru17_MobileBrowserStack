@@ -14,16 +14,16 @@ public class IosSearchTests extends TestBase {
     @Test
     @Tag("ios")
     @DisplayName("Проверка отображения email")
-    void loginTestFlight (){
-        step("Click button", () ->{
+    void loginTestFlight() {
+        step("Click button", () -> {
             $(id("Text Button")).click();
         });
-        step("Write email on text area", () ->{
+        step("Write email on text area", () -> {
             $(id("Text Input")).click();
             $(id("Text Input")).sendKeys("sard@gmail.com");
             $(id("Text Input")).pressEnter();
         });
-        step("Check result", () ->{
+        step("Check result", () -> {
             assertEquals("sard@gmail.com", $(id("Text Output")).getText());
         });
     }
