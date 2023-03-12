@@ -14,10 +14,9 @@ import static io.qameta.allure.Allure.step;
 import static org.openqa.selenium.By.id;
 
 @Tag("android")
-@Test
 public class AndroidSearchTests extends TestBase {
 
-
+    @Test
     @DisplayName("Проверка поля поиска")
     void searchTest() {
         step("Type search", () -> {
@@ -29,7 +28,7 @@ public class AndroidSearchTests extends TestBase {
                         .shouldHave(sizeGreaterThan(0)));
     }
 
-
+    @Test
     @DisplayName("Проверка текста на кнопке в форме входа")
     void checkButtonLogIn() {
 
